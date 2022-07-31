@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GuessingGame</string>
+    <string name="instructions1">Guess the secret number within the given number of guesses</string>
+    <string name="instructions2">Accumulate points as you keep winning rounds</string>
+    <string name="instructions3">Points reset to 0 if you lose</string>
+</resources>

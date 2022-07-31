@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuessDifficulty"
+    android:background = "@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="203dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Guessing Game"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/easyGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="#FF5722"
+        android:text="Easy - 12 Guesses"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/mediumGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FF5722"
+        android:text="Medium - 10 Guesses"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyGuess" />
+
+    <Button
+        android:id="@+id/hardGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FF5722"
+        android:text="Hard - 5 Guesses"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumGuess" />
+
+    <Button
+        android:id="@+id/GuessBackButton"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hardGuess"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="265dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hardGuess"
+        app:layout_constraintVertical_bias="0.614"
+        app:srcCompat="@drawable/guess_diff" />
+
+    <TextView
+        android:id="@+id/InstructionsGuessMode1"
+        android:layout_width="413dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/instructions1"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/InstructionsGuessMode2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/instructions2"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InstructionsGuessMode1" />
+
+    <TextView
+        android:id="@+id/InstructionsGuessMode3"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="@string/instructions3"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/easyGuess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InstructionsGuessMode2"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

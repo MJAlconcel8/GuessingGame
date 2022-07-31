@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuessingModeHard"
+    android:background = "@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/SubmitHard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:backgroundTint="#FF5722"
+        android:text="Guess"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <TextView
+        android:id="@+id/GuessModeTitleHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guessing Game"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GuessesLeftHard"
+        android:layout_width="241dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GuessModeTitleHard" />
+
+    <TextView
+        android:id="@+id/pointsHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: 0"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <EditText
+        android:id="@+id/inputHard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#121111"
+        app:layout_constraintBottom_toTopOf="@+id/SubmitHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GuessesLeftHard"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <Button
+        android:id="@+id/buttonToQuitHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Exit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/InstructionsHard"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:text="Pick a number between 1 and 50"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/GuessesLeftHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GuessModeTitleHard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/HintHard"
+        android:layout_width="367dp"
+        android:layout_height="68dp"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/pointsHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OutputHard" />
+
+    <TextView
+        android:id="@+id/OutputHard"
+        android:layout_width="335dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubmitHard" />
+</androidx.constraintlayout.widget.ConstraintLayout>
